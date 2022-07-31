@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポーカーゲーム</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="title">
+    <img src="img/LOGO.png" alt="ロゴ画像">
+    <button id="start-btn">GAME START</button>
+
+    <div class="rule">
+      <ul>
+        <li>ディーラー(CPU)と対戦形式のポーカーゲームです。</li>
+        <li>カードはジョーカーを含めない52枚で行います。</li>
+        <li>ドロー(交換)は、1回だけ可能です。</li>
+        <li>お互いの役が同じ場合は、役となっているカードの最も大きい数字が判定の対象になります。</li>
+        <li>お互いがノーペア、もしくは最大の数字が同じ場合は引き分けとなります。</li>
+        <li>『A』は基本的に最強の数字ですが、『A,2,3,4,5』のストレート(ストレートフラッシュ)の場合は最弱の数字として扱われます。</li>
+        <li>役の一覧は<a href="hand.html" target="_blank">コチラ</a>で確認できます。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container hidden">
+    <div class="dealer">
+      <div></div>
+    </div>
+    <div class="deck">
+      <img id="card" src="img/card-inside.png" alt="カード画像">
+    </div>
+    <div class="user">
+      <div></div>
+    </div>
+
+    <div class="text hidden">
+      <p id="text-p"></p>
+      <button id="text-btn" class="hidden">OK</button>
+
+      <div class="action-btns">
+        <button id="draw-btn">ドロー</button>
+        <button id="check-btn">チェック</button>
+      </div>
+    </div>
+  </div>
+
+  <button id="change-btn" class="hidden none">CHANGE</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
