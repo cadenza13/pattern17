@@ -182,13 +182,47 @@ body{
   cursor: default;
 }
 
+.hand-title{
+  margin: 30px;
+}
+
+.hand-title > h1{
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.hand-title > p{
+  font-size: 16px;
+  color: #fff;
+}
+
 .hand-list{
   margin: 30px;
 }
 
 .hand-list > li{
+  margin-top: 20px;
+}
+
+.hand-list > li > h2{
   font-size: 20px;
-  margin-top: 10px;
+  color: #fff;
+}
+
+.hand-list > li > .sample{
+  display: flex;
+  margin: 10px 0;
+}
+
+.hand-list > li > .sample > img{
+  width: 60px;
+  height: 90px;
+}
+
+.hand-list > li > p{
+  font-size: 14px;
   color: #fff;
 }
 
@@ -211,5 +245,14 @@ body{
 
   .container > .text > .action-btns{
     width: 260px;
+  }
+
+  .hand-list > li > h2{
+    font-size: 18px;
+  }
+
+  .hand-list > li > .sample > img{
+    width: 40px;
+    height: 60px;
   }
 }
